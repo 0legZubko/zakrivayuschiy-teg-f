@@ -187,8 +187,11 @@ button {
 }
 
 .card__icon-button {
-  border: none;
   border: 2px solid transparent;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--main-color);
 }
 
 .card__like-button {
