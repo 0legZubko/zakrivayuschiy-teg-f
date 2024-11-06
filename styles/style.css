@@ -317,11 +317,6 @@ button:focus {
   width: 100%;
 }
 
-.floppy__save {
-  color: var(--text-color);
-  mix-blend-mode: difference;
-}
-
 dialog[open] {
   display: flex;
   flex-direction: column;
