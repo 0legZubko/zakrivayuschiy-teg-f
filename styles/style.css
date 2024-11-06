@@ -188,6 +188,7 @@ button {
 
 .card__icon-button {
   border: none;
+  border: 2px solid transparent;
 }
 
 .card__like-button {
@@ -222,6 +223,8 @@ article {
 .floppy__save {
   width: 28px;
   height: 28px;
+  color: var(--text-color);
+  mix-blend-mode: difference;
 }
 
 .button__text {
@@ -314,15 +317,6 @@ button:focus {
 .floppy__save {
   color: var(--text-color);
   mix-blend-mode: difference;
-}
-
-.card__icon-button {
-  border: 2px solid transparent;
-}
-
-.card__icon-button:focus-visible {
-  border-color: var(--main-color);
-  transition: 0.3s ease;
 }
 
 dialog[open] {
