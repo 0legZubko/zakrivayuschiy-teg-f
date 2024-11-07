@@ -12,21 +12,25 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/favicon.sv" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
       <div class="header__logo">
-        <div class="logo">&lt;/html&gt;</div>
+        <a href="#0" class="logo">&lt;/html&gt; </a>
         <h1 class="header__title">закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="dark"
+              class="theme-menu__button buttons__text-transform"
+            >
               Темно
             </button>
           </li>
@@ -35,13 +39,17 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="theme-menu__button buttons__text-transform"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="light"
+              class="theme-menu__button buttons__text-transform"
+            >
               Светло
             </button>
           </li>
@@ -55,7 +63,11 @@
         </h2>
         <div class="img__container">
           <p class="img__text">&lt;/HTML&gt;</p>
-          <img class="img img__blend-1" src="./images/image.png" alt="" />
+          <img
+            class="img filter-grayscale"
+            src="./images/image.png"
+            alt="На картинке изображен пейзаж кемпинга, стоит дом на колесах около костра, на изображение применены цветовые фильтры"
+          />
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -67,8 +79,9 @@
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -100,7 +113,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -110,7 +123,11 @@
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="img__container">
           <p class="img__text">&lt;/HTML&gt;</p>
-          <img class="img img__blend-2" src="./images/image.png" alt="" />
+          <img
+            class="img filter-opacity"
+            src="./images/image.png"
+            alt="На картинке изображен пейзаж кемпинга, стоит дом на колесах около костра, на изображение применены цветовые фильтры"
+          />
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -124,8 +141,9 @@
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -157,7 +175,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -167,7 +185,11 @@
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="img__container">
           <p class="img__text">&lt;css&gt;</p>
-          <img class="img img__blend-3" src="./images/image.png" alt="" />
+          <img
+            class="img filter-contrast"
+            src="./images/image.png"
+            alt="На картинке изображен пейзаж кемпинга, стоит дом на колесах около костра, на изображение применены цветовые фильтры"
+          />
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -179,8 +201,9 @@
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -212,7 +235,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -222,7 +245,11 @@
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="img__container">
           <p class="img__text">&lt;desigions&gt;</p>
-          <img class="img img__blend-4" src="./images/image.png" alt="" />
+          <img
+            class="img filter-sepia"
+            src="./images/image.png"
+            alt="На картинке изображен пейзаж кемпинга, стоит дом на колесах около костра, на изображение применены цветовые фильтры"
+          />
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -236,8 +263,9 @@
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -269,7 +297,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -279,7 +307,11 @@
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="img__container">
           <p class="img__text">care</p>
-          <img class="img img__blend-5" src="./images/image.png" alt="" />
+          <img
+            class="img filter-invert"
+            src="./images/image.png"
+            alt="На картинке изображен пейзаж кемпинга, стоит дом на колесах около костра, на изображение применены цветовые фильтры"
+          />
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -294,8 +326,9 @@
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -327,7 +360,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -337,7 +370,11 @@
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="img__container">
           <p class="img__text">&lt;support&gt;</p>
-          <img class="img img__blend-6" src="./images/image.png" alt="" />
+          <img
+            class="img filter-hue"
+            src="./images/image.png"
+            alt="На картинке изображен пейзаж кемпинга, стоит дом на колесах около костра, на изображение применены цветовые фильтры"
+          />
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -349,8 +386,9 @@
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -382,7 +420,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -392,7 +430,11 @@
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="img__container">
           <p class="img__text">&lt;lifes-style: none;&gt;</p>
-          <img class="img img__blend-7" src="./images/image.png" alt="" />
+          <img
+            class="img filter-saturate"
+            src="./images/image.png"
+            alt="На картинке изображен пейзаж кемпинга, стоит дом на колесах около костра, на изображение применены цветовые фильтры"
+          />
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -406,8 +448,9 @@
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -439,7 +482,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -449,7 +492,11 @@
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="img__container">
           <p class="img__text">&lt;experience&gt;</p>
-          <img class="img img__blend-8" src="./images/image.png" alt="" />
+          <img
+            class="img filter-mix"
+            src="./images/image.png"
+            alt="На картинке изображен пейзаж кемпинга, стоит дом на колесах около костра, на изображение применены цветовые фильтры"
+          />
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -461,11 +508,15 @@
               получится, но это тот случай, когда важен сам процесс познания.
               Ведь часто путь — и есть результат.
             </p>
-            <p>Место для ваших воспоминаний о начале обучения.</p>
+            <p>
+              Место, чтобы остановиться, подумать и написать, что вы чувствуете
+              в этой точке пути.
+            </p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -497,40 +548,38 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </article>
-      <footer class="footer">
-        <button
-          class="button__save"
-          type="button"
-          onclick="window['dialog-id'].showModal()"
-          aria-controls="dialog-id"
-        >
-          <svg class="floppy__save" viewBox="0 0 40 40">
+      <button
+        class="button__save button"
+        type="button"
+        onclick="window['dialog-id'].showModal()"
+        aria-controls="dialog-id"
+      >
+        <svg class="floppy__save" viewBox="0 0 40 40">
+          <use href="./images/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+      <dialog id="dialog-id" class="dialog">
+        <div class="container__dialog">
+          <svg viewBox="0 0 40 40" class="dialog__floppy">
             <use href="./images/floppy.svg#floppy"></use>
           </svg>
-          <span class="button__text">Сохранить на память</span>
+          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button
+          type="button"
+          onclick="window['dialog-id'].close()"
+          class="button__dialog button"
+        >
+          <span class="button__text buttons__text-transform">ок</span>
         </button>
-        <dialog id="dialog-id" class="dialog">
-          <div class="container__dialog">
-            <svg viewBox="0 0 40 40" class="dialog__floppy">
-              <use href="./images/floppy.svg#floppy"></use>
-            </svg>
-            <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-          </div>
-          <button
-            type="button"
-            onclick="window['dialog-id'].close()"
-            class="button__dialog"
-          >
-            <span class="button__text">ОК</span>
-          </button>
-        </dialog>
-      </footer>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
