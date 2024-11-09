@@ -44,7 +44,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 120px 0 25px;
+  margin-top: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem);
+  margin-bottom: 25px;
   align-self: center;
 }
 
@@ -197,6 +198,7 @@ button {
   display: flex;
   align-self: flex-end;
   align-items: center;
+  justify-content: flex-end;
   margin: 25px 25px 25px 0;
 }
 
